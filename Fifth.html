@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .home {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+       .logo {
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-left: 70px ;
+            margin-bottom: 0px;
+            background-image: url(assets/images/about/logo-helo.png);
+            font-size: 80px;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 2, 0, 0.906);
+        }
+        
+        .nav-tag{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-left: 100px;
+            margin-left: 300px;
+        }
+        .nav-tag ul{
+            display: flex;
+            list-style-type: none;
+        
+           
+            
+           
+        }
+        .nav-tag li a{
+             text-decoration: none;
+             color: white;
+             padding: 30px;
+             font-size: 20px;
+             
+        }
+
+      
+
+        .gallery {
+            text-align: center;
+        }
+
+        .gallery header {
+            font-size: 3rem;
+            margin: 40px auto 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid black;
+            display: inline-block;
+        }
+
+        /* FIXED IMAGE ALIGNMENT */
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box img {
+            width: 250px; /* fixed uniform width */
+            height: auto; /* maintain aspect ratio */
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        /* Make it responsive */
+        @media (max-width: 768px) {
+            .box img {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .box img {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="home">
+            <div class="nav" style="height: 100px; width: 100%;">
+                <div class="logo">
+                    <img src="/img/logo1.png" alt="">
+                </div>
+                <div class="nav-tag">
+                    <ul>
+                        <li><a href="First.html">Home</a></li>
+                        <li><a href="Second.html">About Us</a></li>
+                        <li><a href="Third.html">Tip</a></li>
+                        <li><a href="Fourth.html">Contact Us</a></li>
+                        <li><a href="Fifth.html">Gallery</a></li>
+                    </ul> 
+                </div>
+            </div>
+            <div class="gallery">
+                <header>Our Gallery</header>
+            </div>
+            <div class="box">
+                <img src="assets/images/about/IMG-20250826-WA0005.jpg" alt="">
+                <img src="assets/images/about/IMG-20250826-WA0006.jpg" alt="">
+                <img src="assets/images/about/IMG-20250826-WA0007.jpg" alt="">
+                <img src="assets/images/about/IMG-20250826-WA0008.jpg" alt="">
+                <img src="assets/images/about/IMG-20250826-WA0009.jpg" alt="">
+                <img src="assets/images/about/IMG-20250826-WA0015.jpg" alt="">
+                <img src="assets/images/about/IMG-20250826-WA0014.jpg" alt="">
+                <img src="assets/images/about/IMG-20250826-WA0013.jpg" alt="">
+                <img src="assets/images/about/IMG-20250826-WA0011.jpg" alt="">
+                <img src="assets/images/about/IMG-20250826-WA0012.jpg" alt="">
+                <img src="assets/images/about/IMG-20250826-WA0010.jpg" alt="">
+                <img src="assets/images/about/img2.jpg" alt="">
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>
